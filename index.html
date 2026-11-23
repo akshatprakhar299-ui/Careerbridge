@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CareerBridge — discover internships, competitions, events and learning opportunities.">
+  <title>CareerBridge | Find what moves you forward</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="auth-screen" id="authScreen">
+  <div class="auth-brand"><span class="brand-mark">C</span><span>career<span class="brand-light">bridge</span><small>YOUR NEXT MOVE STARTS HERE</small></span></div>
+  <div class="auth-layout">
+    <section class="auth-intro">
+      <div class="eyebrow">CAREERBRIDGE · OPPORTUNITY, CONNECTED</div>
+      <h1>Your next opportunity<br>starts with a <em>login.</em></h1>
+      <p>Discover internships, competitions, events and learning experiences. Keep every application organised in one place.</p>
+      <div class="auth-perks"><span>✓ Curated opportunities</span><span>✓ Track applications</span><span>✓ Connect with recruiters</span></div>
+    </section>
+    <section class="auth-card">
+      <div id="authPageContent"></div>
+    </section>
+  </div>
+  <div class="auth-footer">© 2026 CareerBridge · Student opportunity platform</div>
+</div>
+<div class="app-shell" id="appShell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home"><span class="brand-mark">C</span><span>career<span class="brand-light">bridge</span><small>YOUR NEXT MOVE STARTS HERE</small></span></a>
+    <div class="workspace-label">WORKSPACE</div>
+    <nav class="main-nav" id="mainNav">
+      <button class="nav-link active" data-page="home"><span>⌂</span> Overview</button>
+      <button class="nav-link" data-page="discover"><span>⌕</span> Discover opportunities <i class="nav-count">24</i></button>
+      <button class="nav-link" data-page="applications"><span>▤</span> My applications</button>
+      <button class="nav-link" data-page="saved"><span>♡</span> Saved opportunities</button>
+      <div class="nav-divider"></div>
+      <div class="workspace-label">EXPLORE</div>
+      <button class="nav-link" data-page="competitions"><span>♜</span> Hackathons & contests</button>
+      <button class="nav-link" data-page="events"><span>◷</span> Events & workshops</button>
+      <button class="nav-link" data-page="learning"><span>▱</span> Learning hub</button>
+      <div class="nav-divider"></div>
+      <div class="workspace-label">YOUR SPACE</div>
+      <button class="nav-link" data-page="profile"><span>◎</span> My profile</button>
+      <button class="nav-link" data-page="notifications"><span>♧</span> Notifications <i class="notification-dot"></i></button>
+    </nav>
+    <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">✦</div><b>Need a little direction?</b><p>Explore curated opportunities picked for your next step.</p><button data-page="discover">Explore now <span>↗</span></button></div><div class="user-mini"><div class="avatar">AP</div><div><b id="sideUser">Akshat Prakhar</b><small id="sideRole">Student account</small></div></div></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button><div class="breadcrumb">Workspace <span>/</span> <b id="pageCrumb">Overview</b></div><div class="top-actions"><label class="top-search"><span>⌕</span><input id="globalSearch" placeholder="Search opportunities..."/><kbd>⌘ K</kbd></label><button class="icon-btn" data-page="notifications" title="Notifications">♧<i></i></button><button class="top-avatar" data-page="profile" type="button" title="Profile">AP</button><button class="account-action" id="switchAccountBtn" type="button">Switch account</button><button class="account-action logout-action" id="logoutButton" type="button">Log out</button></div></header>
+    <section class="content" id="content"></section>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="modalBackdrop"><section class="modal" id="modal"><button class="modal-close" id="modalClose">×</button><div id="modalBody"></div></section></div>
+<script src="app.js"></script>
+</body></html>
